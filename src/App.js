@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './css/App.css';
 import MapController from './MapController.js';
 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 class App extends Component {
     render() {
         return (
