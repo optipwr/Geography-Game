@@ -12,7 +12,7 @@ class MapController extends Component{
 	}
 	render(){
 		return(
-			<div>Map will go here</div>
+			<div>Sanity check</div>
 		)
 	}
 }
