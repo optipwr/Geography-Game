@@ -16,34 +16,16 @@ class App extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                questionsArray: [
-                    {
-                        questionText: "What is the western most city..",
-                        markers: [{
-                            position: {
-                                lat: 48.1647572,
-                                lng: -124.7331501
-                            },
-                            key: `Cape Alava`,
-                            defaultAnimation: 2,
-                        }]
-                    },
-                    {
-                        questionText: "What is the eastern most city..",
-                        markers: [{
-                            position: {
-                                lat: 50.1647572,
-                                lng: -105.7331501
-                            },
-                            key: `I dont know`,
-                            defaultAnimation: 2,
-                        }]
-                    }
-                ]  
+                data: Data[0]
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMapClick = this.handleMapClick.bind(this);
         this.handleMarkerRightClick = this.handleMarkerRightClick.bind(this);
+
+    }
+
+    componentDidMount() {
+
 
     }
 
@@ -101,12 +83,12 @@ class App extends Component {
                           }
                           onMapLoad={this.handleMapLoad}
                           onMapClick={this.handleMapClick}
-                          questions={this.state.questionsArray}
-                          onMarkerRightClick={this.handleMarkerRightClick}
+                          data={this.state.data}
                         />
                     </div>
 
                 </div>
+                <Questions data={this.state.data} />
                 {this.props.children}
 
             </div>
@@ -115,4 +97,3 @@ class App extends Component {
 }
 
 export default App;
-
