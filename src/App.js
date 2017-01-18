@@ -75,18 +75,18 @@ class App extends Component {
                 <nav className="navbar navbar-default" id="navbar">
                     <div className="container-fluid">
                         <div className="navbar-header">
-                            <h1>Geography Game</h1>
+                            <h1 className="title">Geography Game</h1>
                         </div>
                     </div>
                 </nav>
                 <div className="container">
-                    <div className="row">
+                    <div className="row col-sm-12">
                         <MapController
                           containerElement={
-                            <div style={{ height: `100vh` }} />
+                            <div style={{ height: `50vh` }} />
                           }
                           mapElement={
-                            <div style={{ height: `100vh` }} />
+                            <div style={{ height: `50vh` }} />
                           }
                           onMapLoad={this.handleMapLoad}
                           onMapClick={this.handleMapClick}
@@ -95,6 +95,7 @@ class App extends Component {
                         />
                     </div>
                 </div>
+
             </div>
         );
     }
