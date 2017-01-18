@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
+import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 
-class MapController extends Component{
-	constructor(props) {
-		super(props);
-		this.state = {
-			mapOptions: {
-				center: {lat: 39.8282, lng: -98.5795},
-				zoom: 4
-			}
-		}
-	}
-	render(){
-		return(
-			<div>Sanity check</div>
-		)
-	}
-}
+// RIGHT NOW THIS IS NOT A CLASS!! IT'S A (PURE) RENDER FUNCTION
+const MapController = withGoogleMap(props => (
+  <GoogleMap
+    ref={props.onMapLoad}
+    defaultZoom={3}
+    defaultCenter={{ lat: -25.363882, lng: 131.044922 }}
+    onClick={props.onMapClick}
+  >
+    {props.markers.map(marker => (
+      <Marker
+        {...marker}
+        onRightClick={() => props.onMarkerRightClick(marker)}
+      />
+    ))}
+  </GoogleMap>
+));
 
 export default MapController;
+
