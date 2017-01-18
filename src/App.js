@@ -15,26 +15,28 @@ class App extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                question1:{
-                  questionText: "What is the west most city..."
-                  markers: [{
-                      position: {
-                      lat: 25.0112183,
-                      lng: 121.52067570000001,
-                      },
-                      key: `Taiwan`,
-                      defaultAnimation: 2,
-                    }
-                }
+                question1: {
+                    questionText: "What is the western most city..",
+                    markers: [{
+                        position: {
+                            lat: 48.1647572,
+                            lng: -124.7331501
+                        },
+                        key: `Cape Alava`,
+                        defaultAnimation: 2,
+                    }]
                 },
-                    {
-                    position: {
-                    lat: 48.1647572,
-                    lng: -124.7331501,
-                    },
-                    key: `Cape Alava`,
-                    defaultAnimation: 2,
-                }]
+                question2:{
+                    questionText: "What is the eastern most city..",
+                    markers: [{
+                        position: {
+                            lat: 50.1647572,
+                            lng: -105.7331501
+                        },
+                        key: `I dont know`,
+                        defaultAnimation: 2,
+                    }]
+                }       
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMapClick = this.handleMapClick.bind(this);
