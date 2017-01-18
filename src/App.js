@@ -16,7 +16,7 @@ class App extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                data: Data[0]
+                data: {}
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMapClick = this.handleMapClick.bind(this);
@@ -26,7 +26,9 @@ class App extends Component {
 
     componentDidMount() {
 
-
+        this.setState({
+            data: Data[0]
+        })
     }
 
       handleMapLoad(map) {
