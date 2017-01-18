@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 import _ from "lodash";
+import Questions from './Questions';
 
 // Custom Modules
 import MapController from './MapController.js';
@@ -25,7 +26,7 @@ class App extends Component {
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMapClick = this.handleMapClick.bind(this);
-        this.handleMarkerRightClick = this.handleMarkerRightClick.bind(this);                
+        this.handleMarkerRightClick = this.handleMarkerRightClick.bind(this);
 
     }
 
@@ -94,6 +95,33 @@ class App extends Component {
                           onMarkerRightClick={this.handleMarkerRightClick}
                         />
                     </div>
+
+                </div>
+                <div className="container">
+                  <div className="row col-sm-12">
+                    <nav className="navbar navbar-default">
+                      <div className="container">
+                          <ul className="nav navbar-nav">
+                              <li>
+                                  <p className="navbar-btn">
+                                      <a href="#" className="btn btn-danger">Question 1</a>
+                                      <a href="#" className="btn btn-danger">Question 2</a>
+                                      <a href="#" className="btn btn-danger">Question 3</a>
+                                      <a href="#" className="btn btn-danger">Question 4</a>
+                                      <a href="#" className="btn btn-danger">Question 5</a>
+                                      <a href="#" className="btn btn-danger">Question 6</a>
+                                      <a href="#" className="btn btn-danger">Question 7</a>
+                                      <a href="#" className="btn btn-danger">Question 8</a>
+                                      <a href="#" className="btn btn-danger">Question 9</a>
+                                      <a href="#" className="btn btn-danger">Question 10</a>
+
+                                  </p>
+                              </li>
+                          </ul>
+                      </div>
+                    </nav>
+                    <Questions />
+                  </div>
                 </div>
 
             </div>
