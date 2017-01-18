@@ -4,6 +4,7 @@ import './css/App.css';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 import _ from "lodash";
 import Questions from './Questions';
+import Data from './Data';
 
 // Custom Modules
 import MapController from './MapController.js';
@@ -15,28 +16,30 @@ class App extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                question1: {
-                    questionText: "What is the western most city..",
-                    markers: [{
-                        position: {
-                            lat: 48.1647572,
-                            lng: -124.7331501
-                        },
-                        key: `Cape Alava`,
-                        defaultAnimation: 2,
-                    }]
-                },
-                question2:{
-                    questionText: "What is the eastern most city..",
-                    markers: [{
-                        position: {
-                            lat: 50.1647572,
-                            lng: -105.7331501
-                        },
-                        key: `I dont know`,
-                        defaultAnimation: 2,
-                    }]
-                }       
+                questionsArray: [
+                    {
+                        questionText: "What is the western most city..",
+                        markers: [{
+                            position: {
+                                lat: 48.1647572,
+                                lng: -124.7331501
+                            },
+                            key: `Cape Alava`,
+                            defaultAnimation: 2,
+                        }]
+                    },
+                    {
+                        questionText: "What is the eastern most city..",
+                        markers: [{
+                            position: {
+                                lat: 50.1647572,
+                                lng: -105.7331501
+                            },
+                            key: `I dont know`,
+                            defaultAnimation: 2,
+                        }]
+                    }
+                ]  
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMapClick = this.handleMapClick.bind(this);
@@ -98,7 +101,7 @@ class App extends Component {
                           }
                           onMapLoad={this.handleMapLoad}
                           onMapClick={this.handleMapClick}
-                          markers={this.state.markers}
+                          questions={this.state.questionsArray}
                           onMarkerRightClick={this.handleMarkerRightClick}
                         />
                     </div>

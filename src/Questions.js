@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router'
 
 class Questions extends Component {
+
+
   render(){
     return (
                 <div className="container">
                   <div className="row col-sm-12">
                     <nav className="navbar navbar-default">
                       <div className="container">
+                      	<h2>Congrats! You are on question {this.props.params.questionNumber}</h2>
                           <ul className="nav navbar-nav">
                               <li>
                                   <p className="navbar-btn">
