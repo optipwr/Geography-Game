@@ -17,7 +17,7 @@ class App extends Component {
                 </nav>
                 <div className="container">
                     <div className="row">
-                        <MapController />
+                        <Map />
                     </div>
                 </div>
                 <div className="container">
