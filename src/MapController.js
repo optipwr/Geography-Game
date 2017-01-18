@@ -10,7 +10,7 @@ const MapController = withGoogleMap(props => (
     center={props.data.center}
     onClick={props.onMapClick}
   >
-    <Marker position={props.data.position} />
+    <Marker position={props.data.position} visible={props.data.visible} />
   </GoogleMap>
 ));
 
