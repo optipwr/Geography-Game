@@ -1,3 +1,5 @@
+//ON HOLD GENTLEMEN
+
 function loadJS(src) {
    var ref = window.document.getElementsByTagName("script")[0];
    var script = window.document.createElement("script");
@@ -5,8 +7,7 @@ function loadJS(src) {
    script.async = true;
    ref.parentNode.insertBefore(script, ref);
 }
-
-[8:58]  
+ 
 class Map extends React.Component {
    constructor(props) {
        super(props);
