@@ -15,12 +15,24 @@ class App extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                markers: [{
+                question1:{
+                  questionText: "What is the west most city..."
+                  markers: [{
+                      position: {
+                      lat: 25.0112183,
+                      lng: 121.52067570000001,
+                      },
+                      key: `Taiwan`,
+                      defaultAnimation: 2,
+                    }
+                }
+                },
+                    {
                     position: {
-                    lat: 25.0112183,
-                    lng: 121.52067570000001,
+                    lat: 48.1647572,
+                    lng: -124.7331501,
                     },
-                    key: `Taiwan`,
+                    key: `Cape Alava`,
                     defaultAnimation: 2,
                 }]
             }
@@ -38,25 +50,17 @@ class App extends Component {
       }
 
       handleMapClick(event) {
-        const nextMarkers = [
-          ...this.state.markers,
-          {
-            position: event.latLng,
-            defaultAnimation: 2,
-            key: Date.now(), // Add a key property for: http://fb.me/react-warning-keys
-          },
-        ];
-        this.setState({
-          markers: nextMarkers,
-        });
+        var x = document.getElementById('questionOne');
+        x.style.color = 'blue';
+        };
 
-        if (nextMarkers.length === 3) {
-          this.props.toast(
-            `Right click on the marker to remove it`,
-            `Also check the code!`
-          );
-        }
-      }
+      //   if (nextMarkers.length === 3) {
+      //     this.props.toast(
+      //       `Right click on the marker to remove it`,
+      //       `Also check the code!`
+      //     );
+      //   }
+      // }
 
       handleMarkerRightClick(targetMarker) {
         /*
@@ -68,6 +72,7 @@ class App extends Component {
         this.setState({
           markers: nextMarkers,
         });
+        console.log(this.state.markers)
       }
 
     render() {
@@ -97,32 +102,7 @@ class App extends Component {
                     </div>
 
                 </div>
-                <div className="container">
-                  <div className="row col-sm-12">
-                    <nav className="navbar navbar-default">
-                      <div className="container">
-                          <ul className="nav navbar-nav">
-                              <li>
-                                  <p className="navbar-btn">
-                                      <a href="#" className="btn btn-danger">Question 1</a>
-                                      <a href="#" className="btn btn-danger">Question 2</a>
-                                      <a href="#" className="btn btn-danger">Question 3</a>
-                                      <a href="#" className="btn btn-danger">Question 4</a>
-                                      <a href="#" className="btn btn-danger">Question 5</a>
-                                      <a href="#" className="btn btn-danger">Question 6</a>
-                                      <a href="#" className="btn btn-danger">Question 7</a>
-                                      <a href="#" className="btn btn-danger">Question 8</a>
-                                      <a href="#" className="btn btn-danger">Question 9</a>
-                                      <a href="#" className="btn btn-danger">Question 10</a>
-
-                                  </p>
-                              </li>
-                          </ul>
-                      </div>
-                    </nav>
-                    <Questions />
-                  </div>
-                </div>
+                {this.props.children}
 
             </div>
         );
@@ -130,3 +110,4 @@ class App extends Component {
 }
 
 export default App;
+
