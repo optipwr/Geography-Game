@@ -25,6 +25,7 @@ class App extends Component {
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMapClick = this.handleMapClick.bind(this);
         this.handleMarkerRightClick = this.handleMarkerRightClick.bind(this);
+        this.handleZoomChange = this.handleZoomChange.bind(this);
 
     }
 
@@ -66,9 +67,9 @@ class App extends Component {
     }
 
       handleZoomChange() {
-        //   this.setState({
-        //       visible: false
-        //   });
+          this.setState({
+              visible: true
+          });
       }
 
       handleMarkerRightClick(targetMarker) {

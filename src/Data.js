@@ -6,9 +6,7 @@ module.exports = [
         position: {lat: 48.1647572, lng: -124.7331501},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
-
+        visible: false,
         // styles: mapStyle
     },
     {
@@ -18,8 +16,7 @@ module.exports = [
         position: {lat: 37.0058053, lng: -89.1777963},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
+        visible: false,
         // styles: mapStyle
     },
     {
@@ -29,8 +26,7 @@ module.exports = [
         position: {lat: 42.938841, lng: -122.145989},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
+        visible: false,
         // styles: mapStyle
     },
     {
@@ -40,8 +36,8 @@ module.exports = [
         position: {lat: 46.852148, lng: -121.757732},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
+        visible: false,
+
         // styles: mapStyle
     },
     {
@@ -51,8 +47,7 @@ module.exports = [
         position: {lat: 35.764963, lng: -82.265140},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
+        visible: false,
         // styles: mapStyle
     },
     {
@@ -62,8 +57,7 @@ module.exports = [
         position: {lat: 44.427801, lng: -110.588431},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
+        visible: false,
         // styles: mapStyle
     },
     {
@@ -73,8 +67,7 @@ module.exports = [
         position: {lat: 36.999082, lng: -109.045224},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
+        visible: false,
         // styles: mapStyle
     },
     {
@@ -84,8 +77,7 @@ module.exports = [
         position: {lat: 30.324650, lng: -81.659913},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
+        visible: false,
         // styles: mapStyle
     },
     {
@@ -95,8 +87,7 @@ module.exports = [
         position: {lat: 43.645147, lng: -79.380863},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
+        visible: false,
         // styles: mapStyle
     },
     {
@@ -106,8 +97,7 @@ module.exports = [
         position: {lat: 33.748777, lng: -84.388246},
         questionZoom: 4,
         answerZoom: 14,
-        visible: true,
-        notVisible: false
+        visible: false,
         // styles: mapStyle
     }
 ];
