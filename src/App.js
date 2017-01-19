@@ -19,6 +19,7 @@ class App extends Component {
                 position: '',
                 questionZoom: '',
                 answerZoom: '',
+                question: '',
                 visible: ''
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
@@ -33,6 +34,7 @@ class App extends Component {
             center: Data[r].center,
             position: Data[r].position,
             visible: Data[r].visible,
+            question: Data[r].question,
             questionZoom: Data[r].questionZoom
         })
     }
@@ -112,7 +114,7 @@ class App extends Component {
                     </div>
 
                 </div>
-
+                <Questions question={this.state.question} />
                 {this.props.children}
 
             </div>
@@ -120,5 +122,5 @@ class App extends Component {
     }
 }
 
-// <Questions data={this.state.data} />
+
 export default App;

@@ -5,7 +5,7 @@ class Questions extends Component {
     render(){
         return (
             <div className="asdf">
-                {this.props.data.question}
+                {this.props.question}
             </div>
         )
     }
