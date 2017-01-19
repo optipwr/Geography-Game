@@ -11,7 +11,7 @@ import MapController from './MapController.js';
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+var num = 0;
 class App extends Component {
     constructor(props) {
         super(props);
@@ -58,13 +58,19 @@ class App extends Component {
 
     handleMarkerClick(event) {
       console.log(event);
+      if(num >= 0){
+        num+=6;
+      }
+      else if(num > 9){
+        alert("You win...great..")
+      }
       this.setState({
-        center: Data[1].center,
-        position: Data[1].position,
-        visible: Data[1].visible,
-        question: Data[1].question,
-        questionZoom: Data[1].questionZoom,
-        answerZoom: Data[1].answerZoom
+        center: Data[num].center,
+        position: Data[num].position,
+        visible: Data[num].visible,
+        question: Data[num].question,
+        questionZoom: Data[num].questionZoom,
+        answerZoom: Data[num].answerZoom
       })
     }
 
