@@ -25,10 +25,18 @@ class App extends Component {
     }
 
     componentDidMount() {
-
+        var r = Math.floor(Math.random() * Data.length);
+        console.log(r);
         this.setState({
-            data: Data[0]
+            data: Data[r]
         })
+    }
+
+    // If you need to update the state in response to prop changes you may compare
+    // this.props and nextProps and perform state transitions using this.setState()
+    // in this method.
+    componentWillReceiveProps() {
+
     }
 
       handleMapLoad(map) {
