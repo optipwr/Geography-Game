@@ -1,0 +1,10 @@
+.navbar{
+	background: linear-gradient(right, #87BCDE, #F0F7EE);
+	height: 80px;
+/* 	text-shadow: -.5px 0 #776871, 0 .5px #776871, .5px 0 #776871, 0 -.5px #776871; */
+	border-bottom: .5px solid #776871;
+}
+
+.title{
+	color: #91A8A4;
+}
