@@ -4,6 +4,7 @@ import './css/App.css';
 import _ from "lodash";
 import Questions from './Questions';
 import Data from './Data';
+import Navbar from './Navbar'
 
 
 // Custom Modules
@@ -72,7 +73,7 @@ class App extends Component {
       }else{
        alert("You win")
 
-      
+
     }
 }
 
@@ -106,13 +107,7 @@ class App extends Component {
     render() {
         return (
             <div className="app-wrapper">
-                <nav className="navbar navbar-default" id="navbar">
-                    <div className="container-fluid">
-                        <div className="navbar-header">
-                            <h1 className="title">Geography Game</h1>
-                        </div>
-                    </div>
-                </nav>
+                <Navbar />
                 <div className="container">
                     <div className="row col-sm-12">
                         <MapController
