@@ -31,14 +31,14 @@ class App extends Component {
     }
 
     componentDidMount() {
-        var r = Math.floor(Math.random() * Data.length);
+        // var r = Math.floor(Math.random() * Data.length);
         this.setState({
-            center: Data[r].center,
-            position: Data[r].position,
-            visible: Data[r].visible,
-            question: Data[r].question,
-            questionZoom: Data[r].questionZoom,
-            answerZoom: Data[r].answerZoom
+            center: Data[0].center,
+            position: Data[0].position,
+            visible: Data[0].visible,
+            question: Data[0].question,
+            questionZoom: Data[0].questionZoom,
+            answerZoom: Data[0].answerZoom
         })
     }
 
@@ -52,7 +52,7 @@ class App extends Component {
     handleMapLoad(map) {
         this._mapComponent = map;
             if (map) {
-          console.log(map.getZoom());
+          // console.log(map.getZoom());
         }
     }
 
