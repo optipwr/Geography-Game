@@ -5,6 +5,7 @@ import _ from "lodash";
 import Questions from './Questions';
 import Data from './Data';
 
+
 // Custom Modules
 import MapController from './MapController.js';
 
@@ -36,7 +37,8 @@ class App extends Component {
             position: Data[r].position,
             visible: Data[r].visible,
             question: Data[r].question,
-            questionZoom: Data[r].questionZoom
+            questionZoom: Data[r].questionZoom,
+            answerZoom: Data[r].answerZoom
         })
     }
 
@@ -50,7 +52,7 @@ class App extends Component {
     handleMapLoad(map) {
         this._mapComponent = map;
             if (map) {
-        //   console.log(map.getZoom());
+          console.log(map.getZoom());
         }
     }
 
@@ -67,9 +69,17 @@ class App extends Component {
     }
 
       handleZoomChange() {
-          this.setState({
-              visible: true
-          });
+          const zoomLevel = this._mapComponent.getZoom();
+          if (zoomLevel >= this.state.answerZoom) {
+              this.setState({
+                  visible: true
+              })
+          } else {
+              this.setState({
+                  visible: false
+              })
+          }
+
       }
 
       handleMarkerRightClick(targetMarker) {
