@@ -11,11 +11,11 @@ const MapController = withGoogleMap(props => (
         ref={props.onMapLoad}
         defaultZoom={props.questionZoom}
         center={props.center}
-        onClick={props.onMapClick}
         onZoomChanged={props.onMapZoom}>
         <Marker
             position={props.position}
-            visible={props.visible}>
+            visible={props.visible}
+            onClick={props.onMarkerClick}>
         </Marker>
     </GoogleMap>
 ));

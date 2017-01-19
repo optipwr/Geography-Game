@@ -24,7 +24,7 @@ class App extends Component {
                 visible: ''
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
-        this.handleMapClick = this.handleMapClick.bind(this);
+        this.handleMarkerClick = this.handleMarkerClick.bind(this);
         this.handleMarkerRightClick = this.handleMarkerRightClick.bind(this);
         this.handleZoomChange = this.handleZoomChange.bind(this);
 
@@ -56,16 +56,16 @@ class App extends Component {
         }
     }
 
-    handleMapClick(event) {
-
-
-
-      //   if (nextMarkers.length === 3) {
-      //     this.props.toast(
-      //       `Right click on the marker to remove it`,
-      //       `Also check the code!`
-      //     );
-      //   }
+    handleMarkerClick(event) {
+      console.log(event);
+      this.setState({
+        center: Data[1].center,
+        position: Data[1].position,
+        visible: Data[1].visible,
+        question: Data[1].question,
+        questionZoom: Data[1].questionZoom,
+        answerZoom: Data[1].answerZoom
+      })
     }
 
       handleZoomChange() {
@@ -115,7 +115,7 @@ class App extends Component {
                             <div style={{ height: `50vh` }} />
                           }
                           onMapLoad={this.handleMapLoad}
-                          onMapClick={this.handleMapClick}
+                          onMarkerClick={this.handleMarkerClick}
                           onMapZoom={this.handleZoomChange}
                           center={this.state.center}
                           position={this.state.position}
