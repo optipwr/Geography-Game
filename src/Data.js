@@ -99,5 +99,6 @@ module.exports = [
         answerZoom: 9,
         visible: false,
         // styles: mapStyle
-    }
+    },
+    
 ];
