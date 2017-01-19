@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 
 
@@ -9,12 +9,13 @@ import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 const MapController = withGoogleMap(props => (
     <GoogleMap
         ref={props.onMapLoad}
-        defaultZoom={props.data.questionZoom}
-        center={props.data.center}
-        onClick={props.onMapClick}>
+        defaultZoom={props.questionZoom}
+        center={props.center}
+        onClick={props.onMapClick}
+        onZoomChanged={props.onMapZoom}>
         <Marker
-            position={props.data.position}
-            visible={props.data.visible}>
+            position={props.position}
+            visible={props.visible}>
         </Marker>
     </GoogleMap>
 ));

@@ -7,6 +7,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
 
         // styles: mapStyle
     },
@@ -18,6 +19,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
         // styles: mapStyle
     },
     {
@@ -28,6 +30,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
         // styles: mapStyle
     },
     {
@@ -38,6 +41,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
         // styles: mapStyle
     },
     {
@@ -48,6 +52,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
         // styles: mapStyle
     },
     {
@@ -58,6 +63,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
         // styles: mapStyle
     },
     {
@@ -68,6 +74,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
         // styles: mapStyle
     },
     {
@@ -78,6 +85,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
         // styles: mapStyle
     },
     {
@@ -88,6 +96,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
         // styles: mapStyle
     },
     {
@@ -98,6 +107,7 @@ module.exports = [
         questionZoom: 4,
         answerZoom: 14,
         visible: true,
+        notVisible: false
         // styles: mapStyle
     }
 ];

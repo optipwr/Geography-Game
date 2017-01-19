@@ -1,7 +1,6 @@
 // Dependencies
 import React, { Component } from 'react';
 import './css/App.css';
-import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 import _ from "lodash";
 import Questions from './Questions';
 import Data from './Data';
@@ -16,7 +15,11 @@ class App extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                data: {}
+                center: '',
+                position: '',
+                questionZoom: '',
+                answerZoom: '',
+                visible: ''
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMapClick = this.handleMapClick.bind(this);
@@ -26,9 +29,11 @@ class App extends Component {
 
     componentDidMount() {
         var r = Math.floor(Math.random() * Data.length);
-        console.log(r);
         this.setState({
-            data: Data[r]
+            center: Data[r].center,
+            position: Data[r].position,
+            visible: Data[r].visible,
+            questionZoom: Data[r].questionZoom
         })
     }
 
@@ -39,17 +44,16 @@ class App extends Component {
 
     }
 
-      handleMapLoad(map) {
+    handleMapLoad(map) {
         this._mapComponent = map;
-        if (map) {
-          console.log(map.getZoom());
+            if (map) {
+        //   console.log(map.getZoom());
         }
-      }
+    }
 
-      handleMapClick(event) {
-        var x = document.getElementById('questionOne');
-        x.style.color = 'blue';
-        };
+    handleMapClick(event) {
+
+
 
       //   if (nextMarkers.length === 3) {
       //     this.props.toast(
@@ -57,7 +61,13 @@ class App extends Component {
       //       `Also check the code!`
       //     );
       //   }
-      // }
+    }
+
+      handleZoomChange() {
+        //   this.setState({
+        //       visible: false
+        //   });
+      }
 
       handleMarkerRightClick(targetMarker) {
         /*
@@ -93,12 +103,16 @@ class App extends Component {
                           }
                           onMapLoad={this.handleMapLoad}
                           onMapClick={this.handleMapClick}
-                          data={this.state.data}
+                          onMapZoom={this.handleZoomChange}
+                          center={this.state.center}
+                          position={this.state.position}
+                          visible={this.state.visible}
+                          questionZoom={this.state.questionZoom}
                         />
                     </div>
 
                 </div>
-                <Questions data={this.state.data} />
+
                 {this.props.children}
 
             </div>
@@ -106,4 +120,5 @@ class App extends Component {
     }
 }
 
+// <Questions data={this.state.data} />
 export default App;
