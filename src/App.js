@@ -4,6 +4,7 @@ import './css/index.css';
 import _ from "lodash";
 import Questions from './Questions';
 import Data from './Data';
+import mapStyle from './mapStyle';
 import Navbar from './Navbar'
 
 
@@ -25,6 +26,7 @@ class App extends Component {
                 question: '',
                 visible: '',
                 greeting: '',
+                options: {}
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
@@ -42,7 +44,8 @@ class App extends Component {
             greeting: Data[0].greeting,
             question: Data[0].question,
             questionZoom: Data[0].questionZoom,
-            answerZoom: Data[0].answerZoom
+            answerZoom: Data[0].answerZoom,
+            options: {styles: mapStyle}
         })
     }
 
@@ -50,7 +53,7 @@ class App extends Component {
     // this.props and nextProps and perform state transitions using this.setState()
     // in this method.
     componentDidUpdate() {
-
+        console.log(this.state);
 
     }
 
@@ -134,6 +137,7 @@ class App extends Component {
                           position={this.state.position}
                           visible={this.state.visible}
                           questionZoom={this.state.questionZoom}
+                          options={this.state.options}
                         />
                     </div>
 

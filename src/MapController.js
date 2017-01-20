@@ -11,6 +11,7 @@ const MapController = withGoogleMap(props => (
         ref={props.onMapLoad}
         defaultZoom={props.questionZoom}
         center={props.center}
+        options={props.options}
         onZoomChanged={props.onMapZoom}>
         <Marker
             position={props.position}
