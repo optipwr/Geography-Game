@@ -47,7 +47,8 @@ class App extends Component {
     // If you need to update the state in response to prop changes you may compare
     // this.props and nextProps and perform state transitions using this.setState()
     // in this method.
-    componentWillReceiveProps() {
+    componentDidUpdate() {
+      
 
     }
 
