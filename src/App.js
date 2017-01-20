@@ -59,7 +59,9 @@ class App extends Component {
     handleMapLoad(map) {
         this._mapComponent = map;
             if (map) {
-          // console.log(map.getZoom());
+              this.setState({
+                theMap: map
+              })
         }
     }
 
