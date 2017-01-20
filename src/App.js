@@ -50,7 +50,7 @@ class App extends Component {
     // this.props and nextProps and perform state transitions using this.setState()
     // in this method.
     componentDidUpdate() {
-      
+
 
     }
 
@@ -115,12 +115,18 @@ class App extends Component {
                 <div className="container">
                     <div className="row col-sm-12">
                         <MapController
-                          containerElement={
-                            <div style={{ height: `50vh` }} />
-                          }
-                          mapElement={
-                            <div style={{ height: `50vh` }} />
-                          }
+                            containerElement={
+                              <div style={{
+                                      height: `50vh`,
+                                      margin: `20px`,
+                                      boxShadow: `0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28)`,
+                                  }} />
+                            }
+                            mapElement={
+                              <div style={{
+                                      height: `50vh`,
+                                  }} />
+                            }
                           onMapLoad={this.handleMapLoad}
                           onMarkerClick={this.handleMarkerClick}
                           onMapZoom={this.handleZoomChange}
