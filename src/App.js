@@ -1,6 +1,6 @@
 // Dependencies
 import React, { Component } from 'react';
-import './css/App.css';
+import './css/index.css';
 import _ from "lodash";
 import Questions from './Questions';
 import Data from './Data';
