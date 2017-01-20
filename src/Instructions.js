@@ -19,7 +19,7 @@ class Instructions extends Component {
                 </div>
             </nav>
             <div id="gameInstructions">
-              <h1>How to Play!</h1>
+              <h1 className="how-to-play">How to Play!</h1>
               <p>Geography Game will give you a question that pertains to a certain location within the United States.
               Use your advanced knowledge of our incredible country's geographical locations...(or google search if you wimp out). The answer is in the form of a marker hidden within a certain zoom level on the answer location. Good Luck!</p>
 
