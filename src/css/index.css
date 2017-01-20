@@ -2,27 +2,55 @@ body{
 	font-family: "Hoefler Text";
 }
 
+.container{
+	margin-top: 100px;
+}
+.app-wrapper{
+	background-color: #231F20;
+	height: 100vh;
+}
+
 .navbar{
 	background: linear-gradient(to left, #87BCDE, #F0F7EE);
-	height: 80px;
+	height: 75px;
 	/* text-shadow: -.5px 0 #776871, 0 .5px #776871, .5px 0 #776871, 0 -.5px #776871; */
-	border-bottom: .5px solid #776871;
-	font-size: 48px;
-
-
-
+	border-bottom: .5px solid #776871 !important;
 }
 
-.title{
-	color: white;
+.container-fluid{
+	margin-top: 15px;
+	}
 
+.navbar-brand{
+	font-size: 50px !important;
+	/* margin-top: 10px; */
 }
 
+.navbar-nav{
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.tab{
+	/* background-color: #3066BE; */
+	height: 75px;
+	margin-top: 10px;
+	line-height: 100%;
+}
+
+.greeting-text{
+	font-size: 30px;
+	text-align: center;
+	color: #D1F5FF;
+	margin-bottom: 50px;
+}
 .question-text{
 	font-size: 30px;
 	text-align: center;
+	color: white;
 }
 
 .active{
-	background-color: red !important;
+	/* background-color: #3066BE !important; */
+	color: #3066BE !important;
 }
