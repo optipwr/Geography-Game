@@ -14,10 +14,6 @@ class Navbar extends Component {
                     <li><Link to="/" activeClassName="active">Instructions</Link></li>
                     <li><Link to="asia-mode" activeClassName="active">ASIA MODE YAY</Link></li>
                   </ul>
-                  
-                   
-
-                  
                 </div>
             </nav>
         )
