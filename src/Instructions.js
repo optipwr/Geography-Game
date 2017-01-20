@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router'
+// import { Link } from 'react-router'
 
-class Navbar extends Component {
-    render() {
-        return(
-            <nav className="navbar navbar-default" id="navbar">
+class Instructions extends Component {
+    render(){
+        return (
+        <div>
+        	<nav className="navbar navbar-default" id="navbar">
                 <div className="container-fluid">
                   <div className="navbar-header">
                     <a className="navbar-brand" href="#">Geography Game</a>
@@ -14,16 +16,13 @@ class Navbar extends Component {
                     <li><Link to="/" activeClassName="active">Instructions</Link></li>
                     <li><Link to="asia-mode" activeClassName="active">ASIA MODE YAY</Link></li>
                   </ul>
-                  
-                   
-
-                  
                 </div>
             </nav>
+            <div>Here's How to play</div>
+        </div>
+            
         )
     }
+
 }
-
-export default Navbar;
-
-
+export default Instructions

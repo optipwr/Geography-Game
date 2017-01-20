@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Questions extends Component {
     render(){
         return (
-            <div className="asdf">
+            <div className="question-text">
                 {this.props.question}
             </div>
         )
