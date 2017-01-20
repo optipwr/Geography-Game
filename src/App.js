@@ -23,7 +23,8 @@ class App extends Component {
                 questionZoom: '',
                 answerZoom: '',
                 question: '',
-                visible: ''
+                visible: '',
+                greeting: '',
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
@@ -38,6 +39,7 @@ class App extends Component {
             center: Data[0].center,
             position: Data[0].position,
             visible: Data[0].visible,
+            greeting: Data[0].greeting,
             question: Data[0].question,
             questionZoom: Data[0].questionZoom,
             answerZoom: Data[0].answerZoom
@@ -67,6 +69,7 @@ class App extends Component {
             center: Data[num].center,
             position: Data[num].position,
             visible: Data[num].visible,
+            greeting: Data[num].greeting,
             question: Data[num].question,
             questionZoom: Data[num].questionZoom,
             answerZoom: Data[num].answerZoom
@@ -129,7 +132,7 @@ class App extends Component {
                     </div>
 
                 </div>
-                <Questions question={this.state.question} />
+                <Questions greeting={this.state.greeting} question={this.state.question} />
                 {this.props.children}
 
             </div>

@@ -4,8 +4,13 @@ import React, { Component } from 'react';
 class Questions extends Component {
     render(){
         return (
-            <div className="question-text">
-                {this.props.question}
+        	<div>
+	            <div className="question-text">
+	                {this.props.greeting}
+	            </div>
+	            <div className="question-text">
+	            	{this.props.question}
+	            </div>
             </div>
         )
     }

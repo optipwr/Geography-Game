@@ -1,5 +1,6 @@
 module.exports = [
     {
+        greeting: "Welcome to the Map Game. Your question:",
         question: "What is the westernmost point to the lower 48 states?",
         answer: "Cape Alava, WA",
         center: {lat: 39.8282, lng: -98.5795},
@@ -10,6 +11,7 @@ module.exports = [
         // styles: mapStyle
     },
     {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "This city on America’s largest river shares a name with the capital of Egypt.",
         answer: "Cairo, IL",
         center: {lat: 39.8282, lng: -98.5795},
@@ -20,6 +22,7 @@ module.exports = [
         // styles: mapStyle
     },
     {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "This island is a volcanic cone in America’s deepest Lake. Wizard Island.",
         answer: "Crater Lake, OR",
         center: {lat: 39.8282, lng: -98.5795},
@@ -30,6 +33,7 @@ module.exports = [
         // styles: mapStyle
     },
     {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "Where is the site of largest active alpine glacier in the lower 48 states?",
         answer: "Mt Rainer, WA",
         center: {lat: 39.8282, lng: -98.5795},
@@ -41,6 +45,7 @@ module.exports = [
         // styles: mapStyle
     },
     {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "This is the tallest mountain east of the Mississippi River.",
         answer: "Mt Mitchell, NC",
         center: {lat: 39.8282, lng: -98.5795},
@@ -51,6 +56,7 @@ module.exports = [
         // styles: mapStyle
     },
     {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "This is the location of America’s largest caldera.",
         answer: "Yellowstone, WY",
         center: {lat: 39.8282, lng: -98.5795},
@@ -61,6 +67,7 @@ module.exports = [
         // styles: mapStyle
     },
     {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "This site in America is known as “the Four Corners”.",
         answer: "Border of CO, AZ, UT, and NM",
         center: {lat: 39.8282, lng: -98.5795},
@@ -71,6 +78,7 @@ module.exports = [
         // styles: mapStyle
     },
     {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "This largest city in FL lies on one of the few rivers that flows from South to North.",
         answer: "Jacksonville, FL",
         center: {lat: 39.8282, lng: -98.5795},
@@ -81,6 +89,7 @@ module.exports = [
         // styles: mapStyle
     },
     {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "What is the largest city on the shore of the smallest Great Lake?",
         answer: "Toronto, ON",
         center: {lat: 39.8282, lng: -98.5795},
@@ -91,6 +100,7 @@ module.exports = [
         // styles: mapStyle
     },
     {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "The city got its current name from railroad engineer J. Edgar Thompson. It’s thought to be a shortened version of “Atlantica-Pacifica.”",
         answer: "Atlanta, GA",
         center: {lat: 39.8282, lng: -98.5795},
