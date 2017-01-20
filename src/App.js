@@ -53,7 +53,6 @@ class App extends Component {
     // this.props and nextProps and perform state transitions using this.setState()
     // in this method.
     componentDidUpdate() {
-        console.log(this.state);
 
     }
 
