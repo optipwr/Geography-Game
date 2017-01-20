@@ -9,7 +9,6 @@ import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 const MapController = withGoogleMap(props => (
     <GoogleMap
         ref={props.onMapLoad}
-        defaultZoom={props.questionZoom}
         center={props.center}
         options={props.options}
         onZoomChanged={props.onMapZoom}>

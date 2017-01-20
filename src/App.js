@@ -26,7 +26,7 @@ class App extends Component {
                 question: '',
                 visible: '',
                 greeting: '',
-                options: {}
+                options: {},
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
@@ -43,9 +43,8 @@ class App extends Component {
             visible: Data[0].visible,
             greeting: Data[0].greeting,
             question: Data[0].question,
-            questionZoom: Data[0].questionZoom,
             answerZoom: Data[0].answerZoom,
-            options: {styles: mapStyle}
+            options: {styles: mapStyle, zoom: 4}
         })
     }
 
@@ -73,8 +72,8 @@ class App extends Component {
             visible: Data[num].visible,
             greeting: Data[num].greeting,
             question: Data[num].question,
-            questionZoom: Data[num].questionZoom,
-            answerZoom: Data[num].answerZoom
+            answerZoom: Data[num].answerZoom,
+            options: {zoom: 4}
         })
       }else{
        alert("You win")
@@ -135,7 +134,6 @@ class App extends Component {
                           center={this.state.center}
                           position={this.state.position}
                           visible={this.state.visible}
-                          questionZoom={this.state.questionZoom}
                           options={this.state.options}
                         />
                     </div>
