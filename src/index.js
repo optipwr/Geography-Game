@@ -12,11 +12,8 @@ ReactDOM.render(
 		<Route path="play" component={App} />
 		<Route path="/" component={Instructions} />
 		<Route path="asia-mode" component={AsiaMode} />
-		
+
 
 	</Router>,
 	document.getElementById('root')
 );
-
-
-

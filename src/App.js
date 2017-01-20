@@ -10,6 +10,7 @@ import Navbar from './Navbar'
 
 // Custom Modules
 import MapController from './MapController.js';
+import $ from 'jquery';
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
