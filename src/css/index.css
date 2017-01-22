@@ -4,6 +4,16 @@ body{
 img{
 	height: 300%;
 }
+#globe{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#gameInstructions{
+	font-family: "Hoefler Text";
+  font-size: 30px;
+	text-align: center;
+}
 
 .container{
 	margin-top: 100px;
@@ -48,20 +58,22 @@ img{
 }
 
 h1{
-	color: red !important;
+	text-align: center;
 
 }
 
 .greeting-text{
 	font-size: 30px;
 	text-align: center;
-	color: #D1F5FF;
+	color: black;
 	margin-bottom: 50px;
+	font-family: "Hoefler Text";
 }
 .question-text{
 	font-size: 30px;
 	text-align: center;
-	color: white;
+	color: black;
+	font-family: "Hoefler Text";
 }
 
 .active{

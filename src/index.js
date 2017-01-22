@@ -6,6 +6,8 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 import Questions from './Questions';
 import Instructions from './Instructions';
 import AsiaMode from './AsiaMode';
+import $ from 'jquery';
+
 
 ReactDOM.render(
 	<Router history={hashHistory}>
