@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 import './css/index.css';
+import $ from 'jquery';
+
 
 class AsiaMode extends Component {
     render(){
@@ -28,7 +30,9 @@ class AsiaMode extends Component {
                       </div>
                   </div>
               </nav>
-            <div>ASIA MODEEEEEEEE</div>
+            <div>
+              <h1>Coming Soon</h1>
+            </div>
         </div>
         )
     }

@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 import './css/index.css';
+import $ from 'jquery';
+
 
 class Navbar extends Component {
     render() {
@@ -8,7 +10,7 @@ class Navbar extends Component {
             <nav className="navbar navbar-inverse">
                 <div className="navbar-header">
                     <a className="navbar-brand" href="#">
-                      <img src="https://www.globalbrigades.org/media/Globe.png"/>
+                      <img id="globe" src="https://www.globalbrigades.org/media/Globe.png"/>
                     </a>
                     <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span className="icon-bar"></span>
@@ -23,7 +25,7 @@ class Navbar extends Component {
                     <li className="tab asia-mode-tab"><Link to="asia-mode" activeClassName="active">ASIA MODE YAY</Link></li>
                   </ul>
 
-                    <div className="navbar-header navbar-right">                      
+                    <div className="navbar-header navbar-right">
                     </div>
                 </div>
             </nav>
