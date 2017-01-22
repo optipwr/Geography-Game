@@ -37,6 +37,7 @@ class App extends Component {
     }
 
     componentDidMount() {
+        console.log(Data.length);
         // var r = Math.floor(Math.random() * Data.length);
         this.setState({
             center: Data[0].center,
@@ -67,7 +68,7 @@ class App extends Component {
 
     handleMarkerClick(event) {
       console.log(event);
-      if(num < 9){
+      if(num < 18){
         num++;
         this.setState({
             center: Data[num].center,
