@@ -5,7 +5,7 @@ import _ from "lodash";
 import Questions from './Questions';
 import Data from './Data';
 import mapStyle from './mapStyle';
-import Navbar from './Navbar'
+import Navbar1 from './Navbar'
 
 
 // Custom Modules
@@ -116,7 +116,7 @@ class App extends Component {
     render() {
         return (
             <div className="app-wrapper">
-                <Navbar />
+                <Navbar1 />
                 <div className="container">
                     <div className="row col-sm-12">
                         <MapController

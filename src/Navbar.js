@@ -2,35 +2,39 @@ import React, {Component} from 'react';
 import {Link} from 'react-router';
 import './css/index.css';
 import $ from 'jquery';
+import {Navbar, NavItem, MenuItem, NavDropdown, NavbarCollapse, NavbarBrand, NavbarHeader, Nav} from 'react-bootstrap';
 
 
-class Navbar extends Component {
+class Navbar1 extends Component {
     render() {
         return (
-            <nav className="navbar navbar-inverse">
-                <div className="navbar-header">
-                    <a className="navbar-brand" href="#">
-                      <img id="globe" src="https://www.globalbrigades.org/media/Globe.png"/>
-                    </a>
-                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                    </button>
-                </div>
-                <div className="navbar-collapse collapse">
-                  <ul className="nav navbar-nav">
-                    <li className="tab play-tab"><Link to="play" activeClassName="active">Play</Link></li>
-                    <li className="tab instructions-tab"><Link to="/" activeClassName="active">Instructions</Link></li>
-                    <li className="tab asia-mode-tab"><Link to="asia-mode" activeClassName="active">ASIA MODE YAY</Link></li>
-                  </ul>
-
-                    <div className="navbar-header navbar-right">
-                    </div>
-                </div>
-            </nav>
+            <Navbar inverse collapseOnSelect>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <a href="#">React-Bootstrap</a>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav>
+        <NavItem eventKey={1} href="#">Link</NavItem>
+        <NavItem eventKey={2} href="#">Link</NavItem>
+        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+          <MenuItem eventKey={3.1}>Action</MenuItem>
+          <MenuItem eventKey={3.2}>Another action</MenuItem>
+          <MenuItem eventKey={3.3}>Something else here</MenuItem>
+          <MenuItem divider />
+          <MenuItem eventKey={3.3}>Separated link</MenuItem>
+        </NavDropdown>
+      </Nav>
+      <Nav pullRight>
+        <NavItem eventKey={1} href="#">Link Right</NavItem>
+        <NavItem eventKey={2} href="#">Link Right</NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
         )
     }
 }
 
-export default Navbar;
+export default Navbar1;

@@ -24,7 +24,7 @@ img{
 	height: 100vh;
 }
 
-@media (max-width: 990px) {
+/* @media (max-width: 990px) {
     .navbar-header {
         float: none;
     }
@@ -52,8 +52,8 @@ img{
 }
 
 .navbar-brand{
-    margin-bottom: 25px !important;
-}
+    margin-bottom: 25px !important; */
+/* } */
 .tab{
 	/* background-color: #3066BE; */
 	height: 25px;
