@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 import './css/index.css';
-import $ from 'jquery';
 
 
 class AsiaMode extends Component {
@@ -11,7 +10,7 @@ class AsiaMode extends Component {
               <nav className="navbar navbar-inverse">
                   <div className="navbar-header">
                     <a className="navbar-brand" href="#">
-                      <img src="https://www.globalbrigades.org/media/Globe.png"/>
+                      <img alt="globe" src="https://www.globalbrigades.org/media/Globe.png"/>
                     </a>
                       <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                           <span className="icon-bar"></span>

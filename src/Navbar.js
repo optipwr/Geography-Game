@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 import './css/index.css';
-import $ from 'jquery';
-import {Navbar, NavItem, MenuItem, NavDropdown, NavbarCollapse, NavbarBrand, NavbarHeader, Nav} from 'react-bootstrap';
+import {Navbar, NavItem, Nav} from 'react-bootstrap';
 
 
 class Navbar1 extends Component {
@@ -11,7 +10,7 @@ class Navbar1 extends Component {
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand className="nav-brand">
-                        <a href="#"><img src={require('./Globe.png')} className="logo"/></a>
+                        <a href="#"><img alt="globe" src={require('./Globe.png')} className="logo"/></a>
                         <span className="title"><Link to="/" activeClassName="active"></Link> Geography Game</span>
                     </Navbar.Brand>
                     <Navbar.Toggle />

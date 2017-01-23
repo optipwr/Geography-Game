@@ -4,13 +4,11 @@ import './css/index.css';
 import _ from "lodash";
 import Questions from './Questions';
 import Data from './Data';
-import mapStyle from './mapStyle';
 import Navbar1 from './Navbar'
 
 
 // Custom Modules
 import MapController from './MapController.js';
-import $ from 'jquery';
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -30,7 +28,6 @@ class App extends Component {
     }
 
     componentDidMount() {
-        console.log(Data.length);
         // var r = Math.floor(Math.random() * Data.length);
         this.setState({
             data: Data[0]
@@ -49,7 +46,6 @@ class App extends Component {
     }
 
     handleMarkerClick(event) {
-      console.log(event);
       if (num < (Data.length - 1)) {
         num++;
         this.setState({
