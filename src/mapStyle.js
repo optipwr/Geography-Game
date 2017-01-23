@@ -123,14 +123,6 @@ module.exports = [
   },
   {
     "featureType": "road",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
     "elementType": "geometry",
     "stylers": [
       {
