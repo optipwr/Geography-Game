@@ -37,7 +37,7 @@ module.exports = [
                 "visibility": "on"
             },
             {
-                "lightness": 20
+                "lightness": -10
             }
         ]
     },
