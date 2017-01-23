@@ -4,6 +4,11 @@ body{
 img{
 	height: 200%;
 }
+
+.logo{
+    height: 25px;
+    width: 25px;
+}
 #globe{
 	display: block;
     margin-left: auto;
