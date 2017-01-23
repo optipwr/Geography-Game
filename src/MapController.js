@@ -9,12 +9,11 @@ import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 const MapController = withGoogleMap(props => (
     <GoogleMap
         ref={props.onMapLoad}
-        center={props.center}
-        options={props.options}
+        options={props.mapProps}
         onZoomChanged={props.onMapZoom}>
         <Marker
-            position={props.position}
-            visible={props.visible}
+            visible={props.markerVisibility}
+            options={props.markerProps}
             onClick={props.onMarkerClick}>
         </Marker>
     </GoogleMap>

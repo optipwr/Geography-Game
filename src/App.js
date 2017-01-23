@@ -20,18 +20,11 @@ class App extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                center: '',
-                position: '',
-                questionZoom: '',
-                answerZoom: '',
-                question: '',
-                visible: '',
-                greeting: '',
-                options: {},
+                data: {},
+                visibility: false
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
-        this.handleMarkerRightClick = this.handleMarkerRightClick.bind(this);
         this.handleZoomChange = this.handleZoomChange.bind(this);
 
     }
@@ -40,14 +33,8 @@ class App extends Component {
         console.log(Data.length);
         // var r = Math.floor(Math.random() * Data.length);
         this.setState({
-            center: Data[0].center,
-            position: Data[0].position,
-            visible: Data[0].visible,
-            greeting: Data[0].greeting,
-            question: Data[0].question,
-            answerZoom: Data[0].answerZoom,
-            options: {styles: mapStyle, zoom: 4}
-        })
+            data: Data[0]
+        });
     }
 
     // If you need to update the state in response to prop changes you may compare
@@ -59,11 +46,6 @@ class App extends Component {
 
     handleMapLoad(map) {
         this._mapComponent = map;
-            if (map) {
-              this.setState({
-                theMap: map
-              })
-        }
     }
 
     handleMarkerClick(event) {
@@ -71,47 +53,28 @@ class App extends Component {
       if(num < 18){
         num++;
         this.setState({
-            center: Data[num].center,
-            position: Data[num].position,
-            visible: Data[num].visible,
-            greeting: Data[num].greeting,
-            question: Data[num].question,
-            answerZoom: Data[num].answerZoom,
-            options: {zoom: 4}
+            data: Data[num],
+            visibility: false
         })
       }else{
        alert("You win")
-
-
     }
 }
 
       handleZoomChange() {
           const zoomLevel = this._mapComponent.getZoom();
-          if (zoomLevel >= this.state.answerZoom) {
+          if (zoomLevel >= this.state.data.revealMarkerZoom) {
               this.setState({
-                  visible: true
+                  visibility: true
               })
           } else {
               this.setState({
-                  visible: false
+                  visibility: false
               })
           }
 
       }
 
-      handleMarkerRightClick(targetMarker) {
-        /*
-         * All you modify is data, and the view is driven by data.
-         * This is so called data-driven-development. (And yes, it's now in
-         * web front end and even with google maps API.)
-         */
-        const nextMarkers = this.state.markers.filter(marker => marker !== targetMarker);
-        this.setState({
-          markers: nextMarkers,
-        });
-        console.log(this.state.markers)
-      }
 
     render() {
         return (
@@ -135,15 +98,14 @@ class App extends Component {
                           onMapLoad={this.handleMapLoad}
                           onMarkerClick={this.handleMarkerClick}
                           onMapZoom={this.handleZoomChange}
-                          center={this.state.center}
-                          position={this.state.position}
-                          visible={this.state.visible}
-                          options={this.state.options}
+                          mapProps={this.state.data.mapOptions}
+                          markerProps={this.state.data.markerOptions}
+                          markerVisibility={this.state.visibility}
                         />
                     </div>
 
                 </div>
-                <Questions greeting={this.state.greeting} question={this.state.question} />
+                <Questions greeting={this.state.data.greeting} question={this.state.data.question} />
                 {this.props.children}
 
             </div>
