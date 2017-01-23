@@ -12,14 +12,14 @@ class Navbar1 extends Component {
                 <Navbar.Header>
                     <Navbar.Brand>
                         <a href="#"><img src="https://www.globalbrigades.org/media/Globe.png" className="logo"/></a>
-                        <a href="#"> Geography Game</a>
+                        <a href="#"><Link to="/" activeClassName="active"></Link> Geography Game</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                 <Nav>
-                    <NavItem eventKey={1} href="#">Play</NavItem>
-                    <NavItem eventKey={2} href="#">Instructions</NavItem>
+                    <NavItem eventKey={1} href="#"><Link to="play" activeClassName="active">Play</Link></NavItem>
+                    <NavItem eventKey={2} href="#"><Link to="/" activeClassName="active">Instructions</Link></NavItem>
                 </Nav>
                 <Nav pullRight>
                     <NavItem eventKey={1} href="#"></NavItem>

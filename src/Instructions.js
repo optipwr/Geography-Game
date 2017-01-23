@@ -2,34 +2,32 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 import './css/index.css';
 import $ from 'jquery';
+import {Navbar, NavItem, MenuItem, NavDropdown, NavbarCollapse, NavbarBrand, NavbarHeader, Nav} from 'react-bootstrap';
+
 
 
 class Instructions extends Component {
     render(){
         return (
         <div>
-          <nav className="navbar navbar-inverse">
-              <div className="navbar-header">
-                <a className="navbar-brand" href="#">
-                  <img src="https://www.globalbrigades.org/media/Globe.png"/>
-                </a>
-                  <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span className="icon-bar"></span>
-                      <span className="icon-bar"></span>
-                      <span className="icon-bar"></span>
-                  </button>
-              </div>
-              <div className="navbar-collapse collapse">
-                <ul className="nav navbar-nav">
-                  <li className="tab play-tab"><Link to="play" activeClassName="active">Play</Link></li>
-                  <li className="tab instructions-tab"><Link to="/" activeClassName="active">Instructions</Link></li>
-                  <li className="tab asia-mode-tab"><Link to="asia-mode" activeClassName="active">ASIA MODE YAY</Link></li>
-                </ul>
-
-                  <div className="navbar-header navbar-right">
-                  </div>
-              </div>
-          </nav>
+          <Navbar inverse collapseOnSelect>
+              <Navbar.Header>
+                  <Navbar.Brand>
+                      <a href="#"><img src="https://www.globalbrigades.org/media/Globe.png" className="logo"/></a>
+                      <a href="#"><Link to="/" activeClassName="active"></Link> Geography Game</a>
+                  </Navbar.Brand>
+                  <Navbar.Toggle />
+              </Navbar.Header>
+              <Navbar.Collapse>
+              <Nav>
+                  <NavItem eventKey={1} href="#"><Link to="play" activeClassName="active">Play</Link></NavItem>
+                  <NavItem eventKey={2} href="#"><Link to="/" activeClassName="active">Instructions</Link></NavItem>
+              </Nav>
+              <Nav pullRight>
+                  <NavItem eventKey={1} href="#"></NavItem>
+              </Nav>
+              </Navbar.Collapse>
+          </Navbar>
             <div>
               <h1 className="how-to-play">How to Play!</h1>
               <p id="gameInstructions">Geography Game will give you a question that pertains to a certain location within the United States.
