@@ -1,5 +1,5 @@
 import React from 'react';
-import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+import { withGoogleMap, GoogleMap, Marker, InfoWindow } from 'react-google-maps';
 
 
 // The Google Maps Higher order component. MapController is a function that
@@ -15,6 +15,14 @@ const MapController = withGoogleMap(props => (
             visible={props.markerVisibility}
             options={props.markerProps}
             onClick={props.onMarkerClick}>
+            {props.infowVisibility && (
+                <InfoWindow>
+                    <div>
+                        <p>Nice job! The answer is {props.infoText}.</p>
+                        <button onClick={props.onInfoBtnClick}>Next</button>
+                    </div>
+                </InfoWindow>
+            )}
         </Marker>
     </GoogleMap>
 ));

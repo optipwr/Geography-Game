@@ -19,11 +19,13 @@ class App extends Component {
         super(props);
             this.state = {
                 data: {},
-                visibility: false
+                visibility: false,
+                showInfo: false
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
         this.handleZoomChange = this.handleZoomChange.bind(this);
+        this.handldeInfoBtnClick = this.handldeInfoBtnClick.bind(this);
 
     }
 
@@ -46,30 +48,36 @@ class App extends Component {
 
     }
 
-    handleMarkerClick(event) {
-      if (num < (Data.length - 1)) {
-        num++;
-        this.setState({
-            data: Data[num],
-            visibility: false
-        })
-      } else {
-         alert("You win")
+    handldeInfoBtnClick(event) {
+          if (num < (Data.length - 1)) {
+            num++;
+            this.setState({
+                data: Data[num],
+                visibility: false,
+                showInfo: false
+            })
+          } else {
+             alert("You win")
+        }
     }
+
+    handleMarkerClick(event) {
+        this.setState({
+            showInfo: true
+        })
 }
 
       handleZoomChange() {
           const zoomLevel = this._mapComponent.getZoom();
           if (zoomLevel >= this.state.data.revealMarkerZoom) {
               this.setState({
-                  visibility: true
+                  visibility: true,
               })
           } else {
               this.setState({
                   visibility: false
               })
           }
-
       }
 
     render() {
@@ -97,6 +105,9 @@ class App extends Component {
                           mapProps={this.state.data.mapOptions}
                           markerProps={this.state.data.markerOptions}
                           markerVisibility={this.state.visibility}
+                          infowVisibility={this.state.showInfo}
+                          infoText={this.state.data.answer}
+                          onInfoBtnClick={this.handldeInfoBtnClick}
                         />
                     </div>
 
