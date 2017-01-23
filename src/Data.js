@@ -4,7 +4,7 @@ import mapStyle from './mapStyle';
 module.exports = [
     {
         greeting: "Welcome to the Map Game. Your question:",
-        question: "What is the westernmost point to the lower 48 states?",
+        question: "This cape in Washington is the westernmost point in the lower 48 states?",
         answer: "Cape Alava, WA",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -20,7 +20,7 @@ module.exports = [
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
-        question: "This city on America’s largest river shares a name with the capital of Egypt.",
+        question: "This city that sits on the confluence of the Ohio and Mississippi Rivers shares a name with the capital of Egypt.",
         answer: "Cairo, IL",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -36,7 +36,7 @@ module.exports = [
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
-        question: "This island is a volcanic cone in America’s deepest Lake. Wizard Island.",
+        question: "This samll island is a volcanic cone within America’s deepest Lake.",
         answer: "Crater Lake, OR",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -52,7 +52,7 @@ module.exports = [
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
-        question: "Where is the site of largest active alpine glacier in the lower 48 states?",
+        question: "This mountain in Washington is the site of the largest glaciers in the lower 48 states.",
         answer: "Mt Rainer, WA",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -68,7 +68,7 @@ module.exports = [
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
-        question: "This is the tallest mountain east of the Mississippi River.",
+        question: "This mountain in North Carolina is the tallest east of the Mississippi River.",
         answer: "Mt Mitchell, NC",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -84,7 +84,7 @@ module.exports = [
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
-        question: "This is the location of America’s largest caldera.",
+        question: "This site's popular geysers are fueled by America’s largest caldera.",
         answer: "Yellowstone, WY",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -100,7 +100,7 @@ module.exports = [
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
-        question: "This site in America is known as “the Four Corners”.",
+        question: "This site in the American West is known as “the Four Corners”.",
         answer: "Border of CO, AZ, UT, and NM",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -132,7 +132,7 @@ module.exports = [
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
-        question: "What is the largest city on the shore of the smallest Great Lake?",
+        question: "This is the largest city on the shore of the smallest Great Lake",
         answer: "Toronto, ON",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -148,7 +148,7 @@ module.exports = [
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
-        question: "The city got its current name from railroad engineer J. Edgar Thompson. It’s thought to be a shortened version of “Atlantica-Pacifica.”",
+        question: "This city got its current name from railroad engineer J. Edgar Thompson. It’s thought to be a shortened version of “Atlantica-Pacifica.”",
         answer: "Atlanta, GA",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
