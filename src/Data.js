@@ -3,8 +3,8 @@ import mapStyle from './mapStyle';
 
 module.exports = [
     {
-        greeting: "Welcome to the Map Game. Your question:",
-        question: "This cape in Washington is the westernmost point in the lower 48 states?",
+        greeting: "Welcome to the Map Game. Your first clue is:",
+        question: "This cape in Washington is the westernmost point in the lower 48 states.",
         answer: "Cape Alava, WA",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -20,8 +20,8 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found CAPE ALAVA, WA. We have instantly moved you to the next question.",
-        question: "This city that sits on the confluence of the Ohio and Mississippi Rivers shares a name with the capital of Egypt.",
+        greeting: "Congratulations! You found CAPE ALAVA, WA.  Your next clue is:",
+        question: "This is a city that sits on the confluence of the Ohio and Mississippi Rivers. It shares a name with the capital of Egypt.",
         answer: "Cairo, IL",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -37,7 +37,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found CAIRO, IL. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found CAIRO, IL. Your next clue is:",
         question: "This small island is a volcanic cone within America’s deepest Lake.",
         answer: "Crater Lake, OR",
         mapOptions: {
@@ -54,8 +54,8 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found CRATER LAKE, OR. We have instantly moved you to the next question.",
-        question: "This mountain in Washington is the site of the largest glaciers in the lower 48 states.",
+        greeting: "Congratulations! You found CRATER LAKE, OR. Your next clue is:",
+        question: "This mountain in Washington is the site of the largest glacier in the lower 48 states.",
         answer: "Mt Rainer, WA",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -71,8 +71,8 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found MT. RAINIER, WA. We have instantly moved you to the next question.",
-        question: "This mountain in North Carolina is the tallest east of the Mississippi River.",
+        greeting: "Congratulations! You found MT. RAINIER, WA. Your next clue is:",
+        question: "Located in North Carolina, this mountain is the tallest east of the Mississippi River.",
         answer: "Mt Mitchell, NC",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -88,7 +88,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found MT. MITCHELL, NC. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found MT. MITCHELL, NC. Your next clue is:",
         question: "This site's popular geysers are fueled by America’s largest caldera.",
         answer: "Yellowstone, WY",
         mapOptions: {
@@ -105,7 +105,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found YELLOWSTONE NATIONAL PARK, WY. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found YELLOWSTONE NATIONAL PARK, WY. Your next clue is:",
         question: "This site in the American West is known as “the Four Corners”.",
         answer: "Border of CO, AZ, UT, and NM",
         mapOptions: {
@@ -122,7 +122,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found THE FOUR CORNERS. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found THE FOUR CORNERS. Your next clue is:",
         question: "This largest city in FL lies on one of the few rivers that flows from South to North.",
         answer: "Jacksonville, FL",
         mapOptions: {
@@ -139,7 +139,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found JACKSONVILLE, FL. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found JACKSONVILLE, FL. Your next clue is:",
         question: "This is the largest city on the shore of the smallest Great Lake",
         answer: "Toronto, ON",
         mapOptions: {
@@ -156,8 +156,8 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found TORONTO, ON. We have instantly moved you to the next question.",
-        question: "This city got its current name from railroad engineer J. Edgar Thompson. It’s thought to be a shortened version of “Atlantica-Pacifica.”",
+        greeting: "Congratulations! You found TORONTO, ON. Your next clue is:",
+        question: "This city got its current name from railroad engineer J. Edgar Thompson. It is thought to be a shortened version of “Atlantica-Pacifica.”",
         answer: "Atlanta, GA",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -173,8 +173,8 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found ATLANTA, GA. We have instantly moved you to the next question.",
-        question: "Vermont's lowest point is 95 feet above sea level on the shore of this lake.",
+        greeting: "Congratulations! You found ATLANTA, GA. Your next clue is:",
+        question: "Vermont's lowest point is 95 feet above sea level and on the shore of this lake.",
         answer: "Lake Champlain, VT",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -190,7 +190,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found LAKE CHAMPLAIN, VT. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found LAKE CHAMPLAIN, VT. Your next clue is:",
         question: "Massachusetts' Barnstable County mostly consists of this hook-shaped cape.",
         answer: "Cape Cod, MA",
         mapOptions: {
@@ -207,7 +207,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found CAPE COD, MA. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found CAPE COD, MA. Your next clue is:",
         question: "At about 1,700 square miles, this saline lake is one of the largest lakes in the world with no outlet.",
         answer: "Great Salt Lake, UT",
         mapOptions: {
@@ -224,8 +224,8 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found GREAT SALT LAKE, UT. We have instantly moved you to the next question.",
-        question: "On Aug. 12, 1901 the first auto reached the summit of this peak near Colorado Springs, Colorado.",
+        greeting: "Congratulations! You found GREAT SALT LAKE, UT. Your next clue is:",
+        question: "On Aug. 12, 1901 the first automobile reached the summit of this peak, near Colorado Springs, CO.",
         answer: "Pikes Peak, CO",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -241,7 +241,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found PIKES PEAK, CO. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found PIKES PEAK, CO. Your next clue is:",
         question: "At an altitude of 6,225', this lake on the California-Nevada border doesn't freeze due to its great depth.",
         answer: "Lake Tahoe, CA",
         mapOptions: {
@@ -258,7 +258,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found LAKE TAHOE, CA. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found LAKE TAHOE, CA. Your next clue is:",
         question: "Cadillac Mountain, the highest peak on the Eastern Seaboard, lies in this Maine national park.",
         answer: "Acadia National Park, ME",
         mapOptions: {
@@ -275,7 +275,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found ACADIA NATIONAL PARK, ME. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found ACADIA NATIONAL PARK, ME. Your next clue is:",
         question: "With a population of 104,000, this city is the smallest to boast an NFL franchise.",
         answer: "Green Bay, WI",
         mapOptions: {
@@ -292,8 +292,8 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found GREEN BAY, WI. We have instantly moved you to the next question.",
-        question: 'A campus for the University of Alabama is here, nicknamed "Rocket City, U.S.A."',
+        greeting: "Congratulations! You found GREEN BAY, WI. Your next clue is:",
+        question: 'A campus for the University of Alabama is located in the city nicknamed, "Rocket City, U.S.A."',
         answer: "Huntsville, AL",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -309,8 +309,8 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found HUNTSVILLE, AL. We have instantly moved you to the next question.",
-        question: "In 1799, if you wanted to go to the nation's capital, you went to this city",
+        greeting: "Congratulations! You found HUNTSVILLE, AL. Your next clue is:",
+        question: "In 1799, if you wanted to go to the nation's capital, you went to this city.",
         answer: "Philadelphia, PA",
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
@@ -326,7 +326,7 @@ module.exports = [
         visible: false,
     },
     {
-        greeting: "Congratulations! You found PHILADELPHIA, PA. We have instantly moved you to the next question.",
+        greeting: "Congratulations! You found PHILADELPHIA, PA. Your next clue is:",
         question: "Its capitol building stands 5,280 feet above sea level.",
         answer: "Denver, CO",
         mapOptions: {
