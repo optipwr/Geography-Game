@@ -182,82 +182,144 @@ module.exports = [
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "Massachusetts' Barnstable County mostly consists of this hook-shaped cape.",
         answer: "Cape Cod, MA",
-        center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 41.727702, lng: -70.0782477},
-        answerZoom: 9,
+        mapOptions: {
+            center: {lat: 39.8282, lng: -98.5795},
+            zoom: 4,
+            styles: mapStyle
+        },
+        markerOptions: {
+            position: {lat: 41.727702, lng: -70.0782477},
+            title: "Cape Cod, MA",
+        },
+        revealMarkerZoom: 9,
         visible: false,
-        // styles: mapStyle
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "At about 1,700 square miles, this saline lake is one of the largest lakes in the world with no outlet.",
         answer: "Great Salt Lake, UT",
-        center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 41.070225, lng: -112.449001},
-        answerZoom: 9,
+        mapOptions: {
+            center: {lat: 39.8282, lng: -98.5795},
+            zoom: 4,
+            styles: mapStyle
+        },
+        markerOptions: {
+            position: {lat: 41.070225, lng: -112.449001},
+            title: "Great Salt Lake, UT",
+        },
+        revealMarkerZoom: 9,
         visible: false,
-        // styles: mapStyle
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "On Aug. 12, 1901 the first auto reached the summit of this peak near Colorado Springs, Colorado.",
         answer: "Pikes Peak, CO",
-        center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 38.8408749, lng: -105.0444482},
-        answerZoom: 9,
+        mapOptions: {
+            center: {lat: 39.8282, lng: -98.5795},
+            zoom: 4,
+            styles: mapStyle
+        },
+        markerOptions: {
+            position: {lat: 38.8408749, lng: -105.0444482},
+            title: "Pikes Peak, CO",
+        },
+        revealMarkerZoom: 9,
         visible: false,
-        // styles: mapStyle
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "At an altitude of 6,225', this lake on the California-Nevada border doesn't freeze due to its great depth.",
         answer: "Lake Tahoe, CA",
-        center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 39.080530, lng: -120.036643},
-        answerZoom: 9,
+        mapOptions: {
+            center: {lat: 39.8282, lng: -98.5795},
+            zoom: 4,
+            styles: mapStyle
+        },
+        markerOptions: {
+            position: {lat: 39.080530, lng: -120.036643},
+            title: "Lake Tahoe, CA",
+        },
+        revealMarkerZoom: 9,
         visible: false,
-        // styles: mapStyle
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "Cadillac Mountain, the highest peak on the Eastern Seaboard, lies in this Maine national park.",
         answer: "Acadia National Park, ME",
-        center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 44.352549, lng: -68.225088},
-        answerZoom: 9,
+        mapOptions: {
+            center: {lat: 39.8282, lng: -98.5795},
+            zoom: 4,
+            styles: mapStyle
+        },
+        markerOptions: {
+            position: {lat: 44.352549, lng: -68.225088},
+            title: "Acadia National Park, ME",
+        },
+        revealMarkerZoom: 9,
         visible: false,
-        // styles: mapStyle
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "With a population of 104,000, this city is the smallest to boast an NFL franchise.",
         answer: "Green Bay, WI",
-        center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 44.5114888, lng: -88.0200227},
-        answerZoom: 9,
+        mapOptions: {
+            center: {lat: 39.8282, lng: -98.5795},
+            zoom: 4,
+            styles: mapStyle
+        },
+        markerOptions: {
+            position: {lat: 44.5114888, lng: -88.0200227},
+            title: "Green Bay, WI",
+        },
+        revealMarkerZoom: 9,
         visible: false,
-        // styles: mapStyle
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: 'A campus for the University of Alabama is here, nicknamed "Rocket City, U.S.A."',
         answer: "Huntsville, AL",
-        center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 34.726693, lng: -86.590142},
-        answerZoom: 9,
+        mapOptions: {
+            center: {lat: 39.8282, lng: -98.5795},
+            zoom: 4,
+            styles: mapStyle
+        },
+        markerOptions: {
+            position: {lat: 34.726693, lng: -86.590142},
+            title: "Huntsville, AL",
+        },
+        revealMarkerZoom: 9,
         visible: false,
-        // styles: mapStyle
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "In 1799, if you wanted to go to the nation's capital, you went to this city",
         answer: "Philadelphia, PA",
-        center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 39.952437, lng: -75.163620},
-        answerZoom: 9,
+        mapOptions: {
+            center: {lat: 39.8282, lng: -98.5795},
+            zoom: 4,
+            styles: mapStyle
+        },
+        markerOptions: {
+            position: {lat: 39.952437, lng: -75.163620},
+            title: "Philadelphia, PA",
+        },
+        revealMarkerZoom: 9,
         visible: false,
-        // styles: mapStyle
     },
-
-
+    {
+        greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
+        question: "Its capitol building stands 5,280 feet above sea level.",
+        answer: "Denver, CO",
+        mapOptions: {
+            center: {lat: 39.8282, lng: -98.5795},
+            zoom: 4,
+            styles: mapStyle
+        },
+        markerOptions: {
+            position: {lat: 39.739232, lng: -104.984770},
+            title: "Denver, CO",
+        },
+        revealMarkerZoom: 9,
+        visible: false,
+    },
 ];
