@@ -31,7 +31,6 @@ class App extends Component {
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
-        this.handleMarkerRightClick = this.handleMarkerRightClick.bind(this);
         this.handleZoomChange = this.handleZoomChange.bind(this);
 
     }
@@ -99,20 +98,7 @@ class App extends Component {
           }
 
       }
-
-      handleMarkerRightClick(targetMarker) {
-        /*
-         * All you modify is data, and the view is driven by data.
-         * This is so called data-driven-development. (And yes, it's now in
-         * web front end and even with google maps API.)
-         */
-        const nextMarkers = this.state.markers.filter(marker => marker !== targetMarker);
-        this.setState({
-          markers: nextMarkers,
-        });
-        console.log(this.state.markers)
-      }
-
+      
     render() {
         return (
             <div className="app-wrapper">
