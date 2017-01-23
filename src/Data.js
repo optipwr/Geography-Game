@@ -101,13 +101,12 @@ module.exports = [
         visible: false,
         // styles: mapStyle
     },
-    // New additions!! Jan 22, 2017
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
         question: "Vermont's lowest point is 95 feet above sea level on the shore of this lake.",
         answer: "Lake Champlain, VT",
         center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 44.368182, lng: -74.3896278},
+        position: {lat: 44.475673, lng: -73.300097},
         answerZoom: 9,
         visible: false,
         // styles: mapStyle
@@ -127,7 +126,7 @@ module.exports = [
         question: "At about 1,700 square miles, this saline lake is one of the largest lakes in the world with no outlet.",
         answer: "Great Salt Lake, UT",
         center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 41.1814599, lng: -113.0403875},
+        position: {lat: 41.070225, lng: -112.449001},
         answerZoom: 9,
         visible: false,
         // styles: mapStyle
@@ -147,7 +146,7 @@ module.exports = [
         question: "At an altitude of 6,225', this lake on the California-Nevada border doesn't freeze due to its great depth.",
         answer: "Lake Tahoe, CA",
         center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 39.0929847, lng: -120.1850545},
+        position: {lat: 39.080530, lng: -120.036643},
         answerZoom: 9,
         visible: false,
         // styles: mapStyle
@@ -157,14 +156,14 @@ module.exports = [
         question: "Cadillac Mountain, the highest peak on the Eastern Seaboard, lies in this Maine national park.",
         answer: "Acadia National Park, ME",
         center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 44.3195407, lng: -68.4368949},
+        position: {lat: 44.352549, lng: -68.225088},
         answerZoom: 9,
         visible: false,
         // styles: mapStyle
     },
     {
         greeting: "Congratulations! You found the marker. We have instantly moved you to the next question.",
-        question: "With a population of 104,000, this city indicated on the map is the smallest to boast an NFL franchise.",
+        question: "With a population of 104,000, this city is the smallest to boast an NFL franchise.",
         answer: "Green Bay, WI",
         center: {lat: 39.8282, lng: -98.5795},
         position: {lat: 44.5114888, lng: -88.0200227},
@@ -177,7 +176,7 @@ module.exports = [
         question: 'A campus for the University of Alabama is here, nicknamed "Rocket City, U.S.A."',
         answer: "Huntsville, AL",
         center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 34.7291145, lng: -86.6016487},
+        position: {lat: 34.726693, lng: -86.590142},
         answerZoom: 9,
         visible: false,
         // styles: mapStyle
@@ -187,7 +186,7 @@ module.exports = [
         question: "In 1799, if you wanted to go to the nation's capital, you went to this city",
         answer: "Philadelphia, PA",
         center: {lat: 39.8282, lng: -98.5795},
-        position: {lat: 39.9366051, lng: -75.1668897},
+        position: {lat: 39.952437, lng: -75.163620},
         answerZoom: 9,
         visible: false,
         // styles: mapStyle
