@@ -9,6 +9,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -25,6 +26,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -41,6 +43,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -57,6 +60,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -73,6 +77,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -89,6 +94,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -105,6 +111,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -121,6 +128,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -137,6 +145,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -153,6 +162,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -169,6 +179,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -185,6 +196,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -201,6 +213,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -217,6 +230,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -233,6 +247,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -249,6 +264,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -265,6 +281,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -281,6 +298,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -297,6 +315,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {
@@ -313,6 +332,7 @@ module.exports = [
         mapOptions: {
             center: {lat: 39.8282, lng: -98.5795},
             zoom: 4,
+            mapTypeId: 'terrain',
             styles: mapStyle
         },
         markerOptions: {

@@ -46,6 +46,7 @@ class App extends Component {
 
     handleMapLoad(map) {
         this._mapComponent = map;
+
     }
 
     handleMarkerClick(event) {
