@@ -50,14 +50,14 @@ class App extends Component {
 
     handleMarkerClick(event) {
       console.log(event);
-      if(num < 18){
+      if (num < (Data.length - 1)) {
         num++;
         this.setState({
             data: Data[num],
             visibility: false
         })
-      }else{
-       alert("You win")
+      } else {
+         alert("You win")
     }
 }
 
