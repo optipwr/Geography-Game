@@ -10,16 +10,16 @@ class Navbar1 extends Component {
         return (
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
-                    <Navbar.Brand>
-                        <a href="#"><img src="https://www.globalbrigades.org/media/Globe.png" className="logo"/></a>
-                        <a href="#"> Geography Game</a>
+                    <Navbar.Brand className="nav-brand">
+                        <a href="#"><img src={require('./Globe.png')} className="logo"/></a>
+                        <span className="title"><Link to="/" activeClassName="active"></Link> Geography Game</span>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                 <Nav>
-                    <NavItem eventKey={1} href="#">Play</NavItem>
-                    <NavItem eventKey={2} href="#">Instructions</NavItem>
+                    <NavItem eventKey={1} className="nav-tab"><Link to="play" activeClassName="active">Play</Link></NavItem>
+                    <NavItem eventKey={2} className="nav-tab"><Link to="/" activeClassName="active">Instructions</Link></NavItem>
                 </Nav>
                 <Nav pullRight>
                     <NavItem eventKey={1} href="#"></NavItem>
