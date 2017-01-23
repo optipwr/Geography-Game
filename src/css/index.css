@@ -13,6 +13,12 @@ img{
     background-size: cover;
     height: 100vh; */
 }
+#dc{
+
+    display: block;
+    width: 75px !important;
+    height: 25px !important;
+}
 
 .nav-brand{
     /* margin-top: 10px; */

@@ -21,7 +21,8 @@ class Navbar1 extends Component {
                     <NavItem eventKey={2} className="nav-tab"><Link to="/" activeClassName="active">Instructions</Link></NavItem>
                 </Nav>
                 <Nav pullRight>
-                    <NavItem eventKey={1} href="#"></NavItem>
+                  <NavItem eventKey={1} href="#"><img id="dc" src="http://www.digitalcrafts.com/img/DigitalCrafts-Logo-Wrench.png" alt=""/>
+                  </NavItem>
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>
