@@ -25,12 +25,14 @@ class App extends Component {
                 visibility: false, // Marker visibility initialzed as false
                 showInfo: false, // Info window initialzed as false
                 showModal: false
+
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
         this.handleZoomChange = this.handleZoomChange.bind(this);
         this.handleInfoBtnClick = this.handleInfoBtnClick.bind(this);
         this.handleInfoCloseClick = this.handleInfoCloseClick.bind(this);
+        this.handleModalButtonClick = this.handleModalButtonClick.bind(this);
     }
 
     // State is set after component is mounted. data represents the main state
@@ -91,6 +93,16 @@ class App extends Component {
         }
     }
 
+    handleModalButtonClick(event){
+      this.setState({
+        data: Data[0],
+        visibility: false,
+        showInfo: false,
+        showModal: false
+      })
+
+    }
+
     // Changes the visibility of the marker at desired zoom level. A condtional
     // is set based on the user's zoom level. If the zoom level
       handleZoomChange() {
@@ -114,13 +126,13 @@ class App extends Component {
 
                     <Modal show={this.state.showModal}>
                         <Modal.Header closeButton>
-                            <Modal.Title>Modal heading</Modal.Title>
+                            <Modal.Title>Congratulations! You've won the game!</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <div>Modal content here </div>
+                            <div><img alt="" src="http://i.imgur.com/s9bPVaK.gif"/></div>
                         </Modal.Body>
                         <Modal.Footer>
-                            <Button onClick={console.log('asdf')}>Close</Button>
+                            <Button onClick={this.handleModalButtonClick}>Reset Game</Button>
                         </Modal.Footer>
                     </Modal>
 
