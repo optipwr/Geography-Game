@@ -36,7 +36,7 @@ This is a geography game where you are asked a question and then you have to loc
 ---
 - Points based system
 - Expand to other regions (Asia, Europe, etc.)
-- Add questions to the game
+- Add additional clues to the game
 
 ##Code Examples
 ---
