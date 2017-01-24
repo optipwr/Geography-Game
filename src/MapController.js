@@ -16,7 +16,7 @@ const MapController = withGoogleMap(props => (
             visible={props.markerVisibility}
             options={props.markerProps}
             onClick={props.onMarkerClick}>
-            {props.infowVisibility && (
+            {props.infoVisibility && (
                 <InfoWindow onCloseClick={props.onInfoCloseClick}>
                     <div style={{textAlign: 'center'}}>
                         <p>Nice job! The answer is {props.infoText}.</p>

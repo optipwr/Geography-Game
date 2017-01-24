@@ -1,5 +1,5 @@
 import {GoogleMapLoader, GoogleMap, Marker} from "react-google-maps";
- 
+
 export default function SimpleMap (props) {
   return (
     <section style={{height: "100%"}}>

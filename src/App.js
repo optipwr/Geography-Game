@@ -25,7 +25,7 @@ class App extends Component {
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
         this.handleZoomChange = this.handleZoomChange.bind(this);
-        this.handldeInfoBtnClick = this.handldeInfoBtnClick.bind(this);
+        this.handleInfoBtnClick = this.handleInfoBtnClick.bind(this);
         this.handleInfoCloseClick = this.handleInfoCloseClick.bind(this);
     }
 // State is set after component is mounted
@@ -46,7 +46,7 @@ class App extends Component {
         })
     }
 // Changes the clue and map location on button click
-    handldeInfoBtnClick(event) {
+    handleInfoBtnClick(event) {
           if (num < (Data.length - 1)) {
             num++;
             this.setState({
@@ -109,9 +109,9 @@ class App extends Component {
                           mapProps={this.state.data.mapOptions}
                           markerProps={this.state.data.markerOptions}
                           markerVisibility={this.state.visibility}
-                          infowVisibility={this.state.showInfo}
+                          infoVisibility={this.state.showInfo}
                           infoText={this.state.data.answer}
-                          onInfoBtnClick={this.handldeInfoBtnClick}
+                          onInfoBtnClick={this.handleInfoBtnClick}
                           onInfoCloseClick={this.handleInfoCloseClick}
                         />
                     </div>

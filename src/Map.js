@@ -7,7 +7,7 @@ function loadJS(src) {
    script.async = true;
    ref.parentNode.insertBefore(script, ref);
 }
- 
+
 class Map extends React.Component {
    constructor(props) {
        super(props);
