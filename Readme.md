@@ -2,7 +2,7 @@
 
 ##About:
 ---
-This is a geography game where you are asked a question and then you have to locate the answer (in the form of a marker) on the map. The catch is that the marker does not appear until you change the map zoom over the area where the answer is at. Once you locate the marker you can click on it and an info window will appear letting you know what you found and a button allowing you to advance to the next question.
+This is a geography game where you are asked a question and then you have to locate the answer (in the form of a marker) on the map. The catch is that the marker does not appear until you zoom into a specific level of the map. Once you locate the marker you can click on it. An info window will appear letting you know the name of the location you have found. You can then click the button within the info window to progress through the game.
 
 ##Technology Used:
 ---
@@ -34,8 +34,7 @@ This is a geography game where you are asked a question and then you have to loc
 
 ##Future Installments:
 ---
-- Logo
-- Points
+- Points based system
 - Expand to other countries ie. Asia
 
 ##Code Examples
@@ -78,21 +77,29 @@ constructor(props) {
 An example of an Object in our Data Array.
 
 ```javascript
-    {
-        greeting: "Welcome to the Map Game. Your first clue is:",
-        question: "This cape in Washington is the westernmost point in the lower 48 states.",
-        answer: "Cape Alava, WA",
-        mapOptions: {
-            center: {lat: 39.8282, lng: -98.5795},
-            zoom: 4,
-            mapTypeId: 'terrain',
-            styles: mapStyle
-        },
-        markerOptions: {
-            position: {lat: 48.1647572, lng: -124.7331501},
-            title: "Cape Alava, WA",
-        },
-        revealMarkerZoom: 9,
-        visible: false,
+{
+    greeting: "Welcome to the Map Game. Your first clue is:",
+    question: "This cape in Washington is the westernmost point in the lower 48 states.",
+    answer: "Cape Alava, WA",
+    mapOptions: {
+        center: {lat: 39.8282, lng: -98.5795},
+        zoom: 4,
+        mapTypeId: 'terrain',
+        styles: mapStyle
     },
+    markerOptions: {
+        position: {lat: 48.1647572, lng: -124.7331501},
+        title: "Cape Alava, WA",
+    },
+    revealMarkerZoom: 9,
+    visible: false,
+},
 ```
+
+##Screenshots
+---
+Homescreen when you first start out
+![alt text](https://github.com/optipwr/Geography-Game/screenshots/Homescreen.png 'Homescreen.png')
+
+Info window when marker is found
+![alt text](https://github.com/optipwr/Geography-Game/screenshots/InfoWindow.png 'InfoWindow.png')
