@@ -5,6 +5,7 @@ import _ from "lodash";
 import Questions from './Questions';
 import Data from './Data';
 import Navbar1 from './Navbar'
+import { Modal, Button } from 'react-bootstrap'
 
 
 // Custom Modules
@@ -22,7 +23,8 @@ class App extends Component {
             this.state = {
                 data: {},
                 visibility: false, // Marker visibility initialzed as false
-                showInfo: false // Info window initialzed as false
+                showInfo: false, // Info window initialzed as false
+                showModal: false
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
@@ -43,20 +45,23 @@ class App extends Component {
         });
     }
 
-    // Establishes the map. This call gives us a Google Map with properties
-    // that can be updated with options.
+    // Establishes the map. This call gives us a Google Map with properties and
+    // that can be called by passing in options or methods.
     handleMapLoad(map) {
         this._mapComponent = map;
     }
 
-    // Closes the info window
+    // Closes the info window. This method sets the state of the info window
+    // visibility so we can refire it by clicking on the the marker again if the
+    // the user had closed it without advancing the game.
     handleInfoCloseClick() {
         this.setState({
             showInfo: false
         })
     }
 
-    // Changes the clue and map location on button click
+    // Changes the clue and map location on button click. This is the main hook
+    // for us to advance the game to the next clue object in Data.js.
     handleInfoBtnClick(event) {
           if (num < (Data.length - 1)) {
             num++;
@@ -66,11 +71,14 @@ class App extends Component {
                 showInfo: false
             })
           } else {
-             alert("You win")
+              this.setState({
+                  showModal: true
+              })
         }
     }
 
-    // Enables the info window on marker click
+    // Enables the info window on marker click. This event set the state of the
+    // info window's visibility boolean.
     handleMarkerClick(event) {
         if (this.state.showInfo === false) {
             this.setState({
@@ -83,7 +91,8 @@ class App extends Component {
         }
     }
 
-    // Changes the visibility of the marker at desired zoom level
+    // Changes the visibility of the marker at desired zoom level. A condtional
+    // is set based on the user's zoom level. If the zoom level
       handleZoomChange() {
           const zoomLevel = this._mapComponent.getZoom();
           if (zoomLevel >= this.state.data.revealMarkerZoom) {
@@ -102,6 +111,19 @@ class App extends Component {
         return (
             <div className="app-wrapper">
                 <Navbar1 />
+
+                    <Modal show={this.state.showModal}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Modal heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <div>Modal content here </div>
+                        </Modal.Body>
+                        <Modal.Footer>
+                            <Button onClick={console.log('asdf')}>Close</Button>
+                        </Modal.Footer>
+                    </Modal>
+
                 <div className="container">
                     <div className="row col-sm-12">
                         <MapController
