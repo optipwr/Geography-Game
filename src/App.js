@@ -10,17 +10,19 @@ import Navbar1 from './Navbar'
 // Custom Modules
 import MapController from './MapController.js';
 
-
+// Bootstrap
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+// Gobal var used to iterate through the Data.js array of objects. These objects
+// represent the propeties for each clue.
 var num = 0;
 class App extends Component {
     constructor(props) {
         super(props);
             this.state = {
                 data: {},
-                visibility: false,
-                showInfo: false
+                visibility: false, // Marker visibility initialzed as false
+                showInfo: false // Info window initialzed as false
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
@@ -28,24 +30,33 @@ class App extends Component {
         this.handleInfoBtnClick = this.handleInfoBtnClick.bind(this);
         this.handleInfoCloseClick = this.handleInfoCloseClick.bind(this);
     }
-// State is set after component is mounted
+
+    // State is set after component is mounted. data represents the main state
+    // object, an object with a clue, answer, and map and marker properties. After
+    // state is initialized in the constructor, we set it here to the first
+    // object in the Data.js module. We could have done this in the constructor,
+    // but setting state here would allow us to set state to a random object in
+    // Data.js if we choose to.
     componentDidMount() {
         this.setState({
             data: Data[0]
         });
     }
-// Establishes the map
+
+    // Establishes the map. This call gives us a Google Map with properties
+    // that can be updated with options.
     handleMapLoad(map) {
         this._mapComponent = map;
-
     }
-// Closes the info window
+
+    // Closes the info window
     handleInfoCloseClick() {
         this.setState({
             showInfo: false
         })
     }
-// Changes the clue and map location on button click
+
+    // Changes the clue and map location on button click
     handleInfoBtnClick(event) {
           if (num < (Data.length - 1)) {
             num++;
@@ -58,7 +69,8 @@ class App extends Component {
              alert("You win")
         }
     }
-// Enables the info window on marker click
+
+    // Enables the info window on marker click
     handleMarkerClick(event) {
         if (this.state.showInfo === false) {
             this.setState({
@@ -70,7 +82,8 @@ class App extends Component {
             })
         }
     }
-// Changes the visibility of the marker at desired zoom level
+
+    // Changes the visibility of the marker at desired zoom level
       handleZoomChange() {
           const zoomLevel = this._mapComponent.getZoom();
           if (zoomLevel >= this.state.data.revealMarkerZoom) {
@@ -83,7 +96,8 @@ class App extends Component {
               })
           }
       }
-// Renders the app
+
+    // Renders the app
     render() {
         return (
             <div className="app-wrapper">
@@ -115,15 +129,11 @@ class App extends Component {
                           onInfoCloseClick={this.handleInfoCloseClick}
                         />
                     </div>
-
                 </div>
                 <Questions greeting={this.state.data.greeting} question={this.state.data.question} />
-                {this.props.children}
-
             </div>
         );
     }
 }
-
 
 export default App;
