@@ -6,7 +6,7 @@ import { Router, Route, hashHistory } from 'react-router'
 import Instructions from './Instructions';
 import AsiaMode from './AsiaMode';
 
-
+// Routing location
 ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="play" component={App} />

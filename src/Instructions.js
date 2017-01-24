@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import './css/index.css';
 import {Navbar, NavItem, Nav} from 'react-bootstrap';
 
-
+// Instructions Component with Navbar
 
 class Instructions extends Component {
     render(){

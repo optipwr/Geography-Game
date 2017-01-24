@@ -1,3 +1,5 @@
+// These styling elements give our map the look we want
+
 module.exports = [
   {
         "featureType": "administrative",

@@ -28,24 +28,24 @@ class App extends Component {
         this.handldeInfoBtnClick = this.handldeInfoBtnClick.bind(this);
         this.handleInfoCloseClick = this.handleInfoCloseClick.bind(this);
     }
-
+// State is set after component is mounted
     componentDidMount() {
         this.setState({
             data: Data[0]
         });
     }
-
+// Establishes the map
     handleMapLoad(map) {
         this._mapComponent = map;
 
     }
-
+// Closes the info window
     handleInfoCloseClick() {
         this.setState({
             showInfo: false
         })
     }
-
+// Changes the clue and map location on button click
     handldeInfoBtnClick(event) {
           if (num < (Data.length - 1)) {
             num++;
@@ -58,7 +58,7 @@ class App extends Component {
              alert("You win")
         }
     }
-
+// Enables the info window on marker click
     handleMarkerClick(event) {
         if (this.state.showInfo === false) {
             this.setState({
@@ -70,7 +70,7 @@ class App extends Component {
             })
         }
     }
-
+// Changes the visibility of the marker at desired zoom level
       handleZoomChange() {
           const zoomLevel = this._mapComponent.getZoom();
           if (zoomLevel >= this.state.data.revealMarkerZoom) {
@@ -83,7 +83,7 @@ class App extends Component {
               })
           }
       }
-
+// Renders the app
     render() {
         return (
             <div className="app-wrapper">
