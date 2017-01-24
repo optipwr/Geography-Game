@@ -28,7 +28,7 @@ This is a geography game where you are asked a question and then you have to loc
 ##Authors
 ---
 * [Drew "Wizard Island" Parker](https://github.com/drewcoparker)
-* [Michael "I didn't want that job anyway!" Irby](https://github.com/optipwr)
+* [Michael "I didn't want that job anyway" Irby](https://github.com/optipwr)
 * [Kyle "Blob/Scrum Master" Plaugher](https://github.com/Kaplaugher)
 * [Sean "Mark J Base" Bhupathi](https://github.com/seanbhup)
 
