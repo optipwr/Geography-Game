@@ -99,7 +99,7 @@ An example of an Object in our Data Array.
 ##Screenshots
 ---
 Homescreen when you first start out
-![alt text](https://github.com/optipwr/Geography-Game/screenshots/Homescreen.png 'Homescreen.png')
+![alt text](https://github.com/optipwr/Geography-Game/blob/master/screenshots/Homescreen.png 'Homescreen.png')
 
 Info window when marker is found
-![alt text](https://github.com/optipwr/Geography-Game/screenshots/InfoWindow.png 'InfoWindow.png')
+![alt text](https://github.com/optipwr/Geography-Game/blob/master/screenshots/InfoWindow.png 'InfoWindow.png')
