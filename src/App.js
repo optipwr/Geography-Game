@@ -64,12 +64,10 @@ class App extends Component {
             this.setState({
                 showInfo: true
             })
-            console.log('info shown');
         } else {
             this.setState({
                 showInfo: false
             })
-            console.log('info hides');
         }
     }
 
