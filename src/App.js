@@ -24,7 +24,7 @@ class App extends Component {
                 data: {},
                 visibility: false, // Marker visibility initialzed as false
                 showInfo: false, // Info window initialzed as false
-                showModal: false
+                showModal: false // Modal initialzed as hidden
 
             }
         this.handleMapLoad = this.handleMapLoad.bind(this);
@@ -93,7 +93,10 @@ class App extends Component {
         }
     }
 
+    // Method handles the modal button's click event. When the button is clicked,
+    // The game is effectively reset.
     handleModalButtonClick(event){
+        num = 0;
       this.setState({
         data: Data[0],
         visibility: false,
@@ -104,7 +107,9 @@ class App extends Component {
     }
 
     // Changes the visibility of the marker at desired zoom level. A condtional
-    // is set based on the user's zoom level. If the zoom level
+    // is set based on the user's zoom level. If the zoom level is greater than
+    // the revealMarkerZoom property in the Data object, the marker will show.
+    // If less, it will hide.
       handleZoomChange() {
           const zoomLevel = this._mapComponent.getZoom();
           if (zoomLevel >= this.state.data.revealMarkerZoom) {
