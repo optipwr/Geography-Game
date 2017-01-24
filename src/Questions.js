@@ -6,9 +6,6 @@ class Questions extends Component {
     render(){
         return (
         	<div>
-	            <div className="greeting-text">
-	                {this.props.greeting}
-	            </div>
 	            <div className="question-text">
 	            	{this.props.question}
 	            </div>

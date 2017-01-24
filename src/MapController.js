@@ -20,7 +20,7 @@ const MapController = withGoogleMap(props => (
                 <InfoWindow onCloseClick={props.onInfoCloseClick}>
                     <div style={{textAlign: 'center'}}>
                         <p>Nice job! The answer is {props.infoText}.</p>
-                        <Button bsStyle="info" bsSize="small" onClick={props.onInfoBtnClick}>Next</Button>
+                        <Button bsStyle="info" bsSize="small" onClick={props.onInfoBtnClick}>Next Clue</Button>
                     </div>
                 </InfoWindow>
             )}
