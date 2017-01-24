@@ -26,26 +26,24 @@ class App extends Component {
         this.handleMarkerClick = this.handleMarkerClick.bind(this);
         this.handleZoomChange = this.handleZoomChange.bind(this);
         this.handldeInfoBtnClick = this.handldeInfoBtnClick.bind(this);
-
+        this.handleInfoCloseClick = this.handleInfoCloseClick.bind(this);
     }
 
     componentDidMount() {
-        // var r = Math.floor(Math.random() * Data.length);
         this.setState({
             data: Data[0]
         });
     }
 
-    // If you need to update the state in response to prop changes you may compare
-    // this.props and nextProps and perform state transitions using this.setState()
-    // in this method.
-    componentDidUpdate() {
-
-    }
-
     handleMapLoad(map) {
         this._mapComponent = map;
 
+    }
+
+    handleInfoCloseClick() {
+        this.setState({
+            showInfo: false
+        })
     }
 
     handldeInfoBtnClick(event) {
@@ -62,10 +60,18 @@ class App extends Component {
     }
 
     handleMarkerClick(event) {
-        this.setState({
-            showInfo: true
-        })
-}
+        if (this.state.showInfo === false) {
+            this.setState({
+                showInfo: true
+            })
+            console.log('info shown');
+        } else {
+            this.setState({
+                showInfo: false
+            })
+            console.log('info hides');
+        }
+    }
 
       handleZoomChange() {
           const zoomLevel = this._mapComponent.getZoom();
@@ -108,6 +114,7 @@ class App extends Component {
                           infowVisibility={this.state.showInfo}
                           infoText={this.state.data.answer}
                           onInfoBtnClick={this.handldeInfoBtnClick}
+                          onInfoCloseClick={this.handleInfoCloseClick}
                         />
                     </div>
 
