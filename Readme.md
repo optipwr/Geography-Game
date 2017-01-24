@@ -19,23 +19,24 @@ This is a geography game where you are asked a question and then you have to loc
 1. Using the Google Maps API with the NPM Package "React-Google-Maps" to successfully get a map rendered onto the screen.
 2. Manipulating the Google Maps API to accomplish things like:
 	1. Changing visibility of markers based on zoom level.
-	2. Targetting markers with JavaScript that only appear based on current render().
-    3. Resetting the map zoom after an event.
-    4. Using info windows to perform actions on the map.
+	2. Targeting markers with JavaScript that only appear based on current render().
+  3. Resetting the map zoom after an event.
+  4. Using info windows to perform actions on the map.
 3. Using React-Router to make our NavBar a have single page links.
 4. Styling the map while using React and React-Google-Maps.
 
 ##Authors
 ---
-* [Drew Parker](https://github.com/drewcoparker)
-* [Michael Irby](https://github.com/optipwr)
-* [Kyle Plaugher](https://github.com/Kaplaugher)
-* [Sean Bhupathi](https://github.com/seanbhup)
+* [Drew "Wizard Island" Parker](https://github.com/drewcoparker)
+* [Michael "I didn't want that job anyway!" Irby](https://github.com/optipwr)
+* [Kyle "Blob/Scrum Master" Plaugher](https://github.com/Kaplaugher)
+* [Sean "Mark J Base" Bhupathi](https://github.com/seanbhup)
 
 ##Future Installments:
 ---
 - Points based system
-- Expand to other countries ie. Asia
+- Expand to other regions (Asia, Europe, etc.)
+- Add questions to the game
 
 ##Code Examples
 ---
