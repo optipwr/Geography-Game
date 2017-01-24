@@ -134,7 +134,7 @@ class App extends Component {
                             <Modal.Title>Congratulations! You've won the game!</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <div><img alt="" src="http://i.imgur.com/s9bPVaK.gif"/></div>
+                            <div><img alt="" id="shia" src="https://media.giphy.com/media/7rj2ZgttvgomY/giphy.gif"/></div>
                         </Modal.Body>
                         <Modal.Footer>
                             <Button onClick={this.handleModalButtonClick}>Reset Game</Button>
