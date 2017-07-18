@@ -66,7 +66,7 @@ class App extends Component {
     // for us to advance the game to the next clue object in Data.js.
     handleInfoBtnClick(event) {
           if (num < (Data.length - 1)) {
-            num++;
+            num+=5;
             this.setState({
                 data: Data[num],
                 visibility: false,

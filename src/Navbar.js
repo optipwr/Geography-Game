@@ -11,7 +11,7 @@ class Navbar1 extends Component {
                 <Navbar.Header>
                     <Navbar.Brand className="nav-brand">
                         <a href="#"><img alt="globe" src={require('./Globe.png')} className="logo"/></a>
-                        <span className="title"><Link to="/" activeClassName="active"></Link> Geography Game</span>
+                        <span className="title"><Link to="/" activeClassName="active"></Link> GeoQuiz</span>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
